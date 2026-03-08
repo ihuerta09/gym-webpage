@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <style>
+form div {
+  margin-bottom: 1em;
+}
+div.submit input {
+  margin-left: 165px;
+}
+label.field {
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  text-align: right;
+}
+input[type="text"], select, textarea {
+  width: 300px;
+  font: 18px Verdana;
+  border: solid 2px #666;
+}
+div.required label.field {
+  font-weight: bold;
+}
+div.required input, div.required select {
+  background-color: #6a6;
+  border: solid 2px #000;
+  font-weight: bold;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="templates/register1" method="post"
+      enctype="multipart/form-data">
+        <div class="required">
+          <label class="field" for="name">Name</label>
+          <input id="name" type="text">
+        </div>
+        <div class="required">
+            <label class="field" for="email">Email</label>
+            <input id="email" type="text">
+        </div>
+        <div class="required">
+            <label class="field" for="phone">Phone</label>
+            <input id="phone" type="text">
+        </div>
+        <div class="required">
+          <label class="field">Gender</label>
+          <label><input type="radio" name="gender" value="male"> male</label>
+          <label><input type="radio" name="gender" value="female"> female</label>
+        </div>
+        <div class="required">
+          <label class="field">Age</label>
+          <select id="age">
+            <option value="18-25">18-25</option>
+            <option value="25-35">25-35</option>
+            <option value="35-45">35-45</option>
+            <option value="45-55">45-55</option>
+            <option value="55+">55+</option>
+          </select>
+        </div>
+        <div class="required">
+            <label class="field" for="username">Username</label>
+            <input id="username" type="text">
+        </div>
+        <div class="required">
+            <label class="field" for="password">Password</label>
+            <input id="password" type="text">
+        </div>
+    </form>
+    <a href="/page1.html">Home</a>
+    <a href="/login.html">Golden Fitness Login</a>
+  </body>
+</html>

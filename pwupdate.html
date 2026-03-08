@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Reset</title>
+<style>
+div{
+    margin-bottom: 5px;
+    }
+label{
+    display: block;
+    float: left;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 10px;
+    }
+input.submit{
+    margin-left: 160 px;
+    border: solid 2px #666;
+    }
+
+</style>
+
+</head>
+
+<body>
+<h1>Reset Password</h1>
+<form action="LoginForm" method="post">
+<div>
+<p>Strong password required. Minimum 12 characters in length.
+Combine uppercase characters, lowercase characters, numbers, and special characters.</p>
+</div>
+<div>
+    <label for = "oldpassword">Old Password</label>
+    <input type="text" name="oldpassword">
+    </div>
+<div>
+    <label for ="new password">New Password</label>
+    <input type="password" name="new password">
+    </div>
+<div>
+    <label for = "confirmation">Confirm New Password</label>
+    <input type="text" name="confirmation">
+    </div>
+    <div>
+    <input type="submit" class="sumbit" value="Reset Password">
+</div>
+</form>
+</body>
+</html>
